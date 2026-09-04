@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>งานอดิเรก | Sarittawat Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="green-flame-border"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-dragon"></i> SARITTAWAT</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                    <li><a href="education.html">การศึกษา</a></li>
+                    <li><a href="hobby.html" class="active">งานอดิเรก</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h2><i class="fa-solid fa-gamepad"></i> งานอดิเรก & สิ่งที่สนใจ</h2>
+                <p>การวาดรูป, ฟังเพลง, เล่นเกม, อ่านหนังสือ และกิจกรรมยามว่าง</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card hobby-card dino-card">
+                    <div class="card-dino">🦖</div>
+                    <div class="hobby-icon-bg"><i class="fa-solid fa-gamepad"></i></div>
+                    <h3>🎮 ROBLOX</h3>
+                    <p>เล่นเกม ROBLOX ผ่อนคลาย สนุกสนานกับเพื่อนๆ และสำรวจแมพใหม่ๆ</p>
+                </div>
+
+                <div class="card hobby-card dino-card">
+                    <div class="card-dino">🦕</div>
+                    <div class="hobby-icon-bg"><i class="fa-solid fa-music"></i></div>
+                    <h3>🎵 Mary on a Cross</h3>
+                    <p>ชอบฟังเพลง Mary on a Cross เพลงโปรดที่ช่วยสร้างบรรยากาศดีๆ เวลาทำงาน</p>
+                </div>
+
+                <div class="card hobby-card dino-card">
+                    <div class="card-dino">🦖</div>
+                    <div class="hobby-icon-bg"><i class="fa-brands fa-github"></i></div>
+                    <h3>💻 GitHub / Coding</h3>
+                    <p>ศึกษาเทคโนโลยี จัดเก็บโปรเจกต์ และพัฒนาโค้ดบน GitHub</p>
+                </div>
+
+                <div class="card hobby-card dino-card">
+                    <div class="card-dino">🦖</div>
+                    <div class="hobby-icon-bg"><i class="fa-solid fa-futbol"></i></div>
+                    <h3>⚽ ฟุตบอล</h3>
+                    <p>เล่นฟุตบอลออกกำลังกาย และเสริมสร้างความสามัคคี</p>
+                </div>
+
+                <div class="card hobby-card dino-card">
+                    <div class="card-dino">🦕</div>
+                    <div class="hobby-icon-bg"><i class="fa-solid fa-camera"></i></div>
+                    <h3>📷 ถ่ายภาพ</h3>
+                    <p>ชอบถ่ายภาพบรรยากาศธรรมชาติที่สวยงามในจังหวัดเชียงใหม่</p>
+                </div>
+
+                <div class="card hobby-card dino-card">
+                    <div class="card-dino">🦖</div>
+                    <div class="hobby-icon-bg"><i class="fa-solid fa-book-open-reader"></i></div>
+                    <h3>📚 อ่านหนังสือ</h3>
+                    <p>อ่านหนังสือเกี่ยวกับการพัฒนาตนเองและเทคโนโลยีใหม่ๆ</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>SARITTAWAT PORTFOLIO</h3>
+                <p>ศริตวรรธน์ ยศเดชากิตติ์ (ปังปอนด์) - ม.3/2 โรงเรียนจอมทอง</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sarittawat Yotdechakit. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('click', function(e) {
+            let scratch = document.createElement('div');
+            scratch.className = 'scratch-mark';
+            scratch.style.left = e.clientX - 35 + 'px';
+            scratch.style.top = e.clientY - 35 + 'px';
+            document.body.appendChild(scratch);
+            setTimeout(() => scratch.remove(), 600);
+        });
+
+        const audio = new Audio('https://tuna.voicemod.net/sound/b07cf62a-ca2b-40a9-83be-dffaa4a7cc7b');
+        document.querySelectorAll('.card').forEach(item => {
+            item.addEventListener('click', () => { audio.currentTime = 0; audio.play().catch(()=>{}); });
+        });
+    </script>
+</body>
+</html>
