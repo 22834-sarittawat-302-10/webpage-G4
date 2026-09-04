@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อ | Sarittawat Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="green-flame-border"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-dragon"></i> SARITTAWAT</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                    <li><a href="education.html">การศึกษา</a></li>
+                    <li><a href="hobby.html">งานอดิเรก</a></li>
+                    <li><a href="contact.html" class="active">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h2><i class="fa-solid fa-address-book"></i> ช่องทางการติดต่อ</h2>
+                <p>สามารถติดต่อหรือติดตามผลงานของปังปอนด์ได้ที่นี่</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card-list">
+                    <div class="card contact-card dino-card">
+                        <div class="card-dino">🦖</div>
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>อีเมล (School Email)</h4>
+                            <p>22834@chomthong.ac.th</p>
+                        </div>
+                    </div>
+
+                    <div class="card contact-card dino-card">
+                        <div class="card-dino">🦕</div>
+                        <div class="contact-icon"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="contact-details">
+                            <h4>Facebook</h4>
+                            <p>ศริตวรรธน์ ยศเดชากิตติ์</p>
+                        </div>
+                    </div>
+
+                    <div class="card contact-card dino-card">
+                        <div class="card-dino">🦖</div>
+                        <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="contact-details">
+                            <h4>Instagram</h4>
+                            <p>pang.za</p>
+                        </div>
+                    </div>
+
+                    <div class="card contact-card dino-card">
+                        <div class="card-dino">🦖</div>
+                        <div class="contact-icon"><i class="fa-brands fa-line"></i></div>
+                        <div class="contact-details">
+                            <h4>Line ID / TikTok</h4>
+                            <p>ศริตวรรธน์</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cta-card dino-card">
+                    <div class="dino-sticker top-right">🦖</div>
+                    <h3><i class="fa-solid fa-fire"></i> Send Message</h3>
+                    <p>ขอบคุณที่เข้าชมเว็บไซต์พอร์ตโฟลิโอสไตล์ Indominus Rex ของผมครับ! สามารถทักมาพูดคุยแลกเปลี่ยนเรื่องเทคโนโลยีหรือเกมได้เลยครับ</p>
+                    <a href="mailto:22834@chomthong.ac.th" class="btn btn-primary dino-click"><i class="fa-solid fa-paper-plane"></i> ส่งอีเมลหาปังปอนด์</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>SARITTAWAT PORTFOLIO</h3>
+                <p>ศริตวรรธน์ ยศเดชากิตติ์ (ปังปอนด์) - ม.3/2 โรงเรียนจอมทอง</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sarittawat Yotdechakit. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('click', function(e) {
+            let scratch = document.createElement('div');
+            scratch.className = 'scratch-mark';
+            scratch.style.left = e.clientX - 35 + 'px';
+            scratch.style.top = e.clientY - 35 + 'px';
+            document.body.appendChild(scratch);
+            setTimeout(() => scratch.remove(), 600);
+        });
+
+        const audio = new Audio('https://tuna.voicemod.net/sound/b07cf62a-ca2b-40a9-83be-dffaa4a7cc7b');
+        document.querySelectorAll('.card, .btn').forEach(item => {
+            item.addEventListener('click', () => { audio.currentTime = 0; audio.play().catch(()=>{}); });
+        });
+    </script>
+</body>
+</html>
