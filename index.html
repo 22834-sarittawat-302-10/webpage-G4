@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก | Sarittawat Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Green Flame Frame Border -->
+    <div class="green-flame-border"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-dragon"></i> SARITTAWAT</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">หน้าแรก</a></li>
+                    <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                    <li><a href="education.html">การศึกษา</a></li>
+                    <li><a href="hobby.html">งานอดิเรก</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="badge"><i class="fa-solid fa-fire"></i> WELCOME TO MY DOMAIN</span>
+                    <h1>สวัสดีครับ! ผม <br><span class="highlight">ศริตวรรธน์ ยศเดชากิตติ์</span></h1>
+                    <p class="hero-subtitle">นักเรียน ม.3/2 | โรงเรียนจอมทอง (เชียงใหม่)</p>
+                    <p class="hero-description">"นักเรียน ม.3 ที่หลงใหลในเทคโนโลยีและการออกแบบ"</p>
+                    <div class="quote-box">
+                        <i class="fa-solid fa-quote-left"></i> <span>It's lapis</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="profile.html" class="btn btn-primary dino-click"><i class="fa-solid fa-user-ninja"></i> รู้จักฉันมากขึ้น</a>
+                        <a href="hobby.html" class="btn btn-outline dino-click"><i class="fa-solid fa-gamepad"></i> ดูงานอดิเรก</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <!-- Dino Clinging Badge -->
+                    <div class="dino-sticker top-right">🦖</div>
+                    <div class="hero-image-bg"></div>
+                    <img src="https://www.khaosod.co.th/wpapp/uploads/2019/06/62216820_2484852834909243_7694992050374049792_n.jpg" alt="รูปโปรไฟล์ของศริตวรรธน์" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="highlights-section">
+            <div class="container grid-3">
+                <div class="card highlight-card dino-card">
+                    <div class="card-dino">🦕</div>
+                    <i class="fa-solid fa-graduation-cap card-icon"></i>
+                    <h3>ระดับชั้น</h3>
+                    <p>มัธยมศึกษาปีที่ 3/2 (GPAX 4.00)</p>
+                </div>
+                <div class="card highlight-card dino-card">
+                    <div class="card-dino">🦖</div>
+                    <i class="fa-solid fa-square-root-variable card-icon"></i>
+                    <h3>วิชาที่ชอบ</h3>
+                    <p>คณิตศาสตร์ & ภาษาอังกฤษ</p>
+                </div>
+                <div class="card highlight-card dino-card">
+                    <div class="card-dino">เพลิงเผา</div>
+                    <i class="fa-solid fa-volcano card-icon"></i>
+                    <h3>ความสนใจ ม.ปลาย</h3>
+                    <p>สายการเรียน วิทย์ - คณิต</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>SARITTAWAT PORTFOLIO</h3>
+                <p>ศริตวรรธน์ ยศเดชากิตติ์ (ปังปอนด์) - ม.3/2 โรงเรียนจอมทอง</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sarittawat Yotdechakit. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Dino Scratch & Sound Script -->
+    <script>
+        document.addEventListener('click', function(e) {
+            // Scratch animation effect
+            let scratch = document.createElement('div');
+            scratch.className = 'scratch-mark';
+            scratch.style.left = e.clientX - 35 + 'px';
+            scratch.style.top = e.clientY - 35 + 'px';
+            document.body.appendChild(scratch);
+            setTimeout(() => scratch.remove(), 600);
+        });
+
+        // Roar Sound Effect
+        const audio = new Audio('https://tuna.voicemod.net/sound/b07cf62a-ca2b-40a9-83be-dffaa4a7cc7b');
+        document.querySelectorAll('.dino-click, .card').forEach(item => {
+            item.addEventListener('click', () => {
+                audio.currentTime = 0;
+                audio.play().catch(()=>{});
+            });
+        });
+    </script>
+</body>
+</html>
