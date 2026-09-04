@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การศึกษา | Sarittawat Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="green-flame-border"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-dragon"></i> SARITTAWAT</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                    <li><a href="education.html" class="active">การศึกษา</a></li>
+                    <li><a href="hobby.html">งานอดิเรก</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h2><i class="fa-solid fa-book-skull"></i> ประวัติการศึกษา</h2>
+                <p>ผลการเรียนและเป้าหมายทางการศึกษา</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fa-solid fa-school"></i></div>
+                    <div class="card timeline-content dino-card">
+                        <div class="card-dino">🦕</div>
+                        <span class="timeline-date">ระดับประถมศึกษา</span>
+                        <h3>โรงเรียนศรีจอมทอง</h3>
+                        <p>ปูพื้นฐานการเรียนรู้และกิจกรรมต่างๆ ในระดับประถม</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon active-icon"><i class="fa-solid fa-fire"></i></div>
+                    <div class="card timeline-content highlight-timeline dino-card">
+                        <div class="card-dino">🦖</div>
+                        <span class="timeline-badge">ปัจจุบัน</span>
+                        <span class="timeline-date">ระดับมัธยมศึกษาตอนต้น</span>
+                        <h3>โรงเรียนจอมทอง (ชั้น ม.3/2)</h3>
+                        <p>เกรดเฉลี่ยสะสม (GPAX): <strong>4.00</strong> | วิชาที่ชอบ: คณิตศาสตร์, ภาษาอังกฤษ</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fa-solid fa-meteor"></i></div>
+                    <div class="card timeline-content dino-card">
+                        <div class="card-dino">🌋</div>
+                        <span class="timeline-date">เป้าหมายอนาคต (ม.ปลาย)</span>
+                        <h3>สายการเรียน วิทย์ - คณิต</h3>
+                        <p>มุ่งมั่นเรียนต่อในสายวิทยาศาสตร์-คณิตศาสตร์ เพื่อต่อยอดด้านเทคโนโลยี</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-section">
+                <h3 class="section-title"><i class="fa-solid fa-table-list"></i> สรุปข้อมูลการศึกษา</h3>
+                <div class="table-wrapper">
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>ระดับการศึกษา</th>
+                                <th>ชื่อสถานศึกษา</th>
+                                <th>ชั้นเรียน/GPAX</th>
+                                <th>วิชาที่ชอบ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ประถมศึกษา</td>
+                                <td>โรงเรียนศรีจอมทอง</td>
+                                <td>ป.1 - ป.6</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>มัธยมศึกษาตอนต้น</td>
+                                <td>โรงเรียนจอมทอง</td>
+                                <td>ม.3/2 (GPAX 4.00)</td>
+                                <td>คณิตศาสตร์, ภาษาอังกฤษ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>SARITTAWAT PORTFOLIO</h3>
+                <p>ศริตวรรธน์ ยศเดชากิตติ์ (ปังปอนด์) - ม.3/2 โรงเรียนจอมทอง</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sarittawat Yotdechakit. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('click', function(e) {
+            let scratch = document.createElement('div');
+            scratch.className = 'scratch-mark';
+            scratch.style.left = e.clientX - 35 + 'px';
+            scratch.style.top = e.clientY - 35 + 'px';
+            document.body.appendChild(scratch);
+            setTimeout(() => scratch.remove(), 600);
+        });
+
+        const audio = new Audio('https://tuna.voicemod.net/sound/b07cf62a-ca2b-40a9-83be-dffaa4a7cc7b');
+        document.querySelectorAll('.card').forEach(item => {
+            item.addEventListener('click', () => { audio.currentTime = 0; audio.play().catch(()=>{}); });
+        });
+    </script>
+</body>
+</html>
